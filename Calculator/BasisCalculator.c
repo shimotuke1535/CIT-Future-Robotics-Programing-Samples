@@ -43,7 +43,6 @@ double fmode(double a)
                 break;
 
                 case 't':
-                //—áŠOˆ—//
                 while(1)
                 {
                     printf("b=>");
@@ -58,7 +57,6 @@ double fmode(double a)
                         break;
                     }
                 }
-                //‰‰Z//
                 b = tan(b*(PI/180));
                 printf("tan[%lf]=>%lf\n",tmp,b);
                 break;
@@ -116,7 +114,6 @@ double fmode(double a)
                 break;
 
                 case 't':
-                //—áŠOˆ—//
                 while(1)
                 {
                     printf("a=>");
@@ -131,7 +128,6 @@ double fmode(double a)
                         break;
                     }
                 }
-                //‰‰Z//
                 a = tan(a*(PI/180));
                 printf("tan[%lf]=>%lf\n",tmp,a);
                 break;
