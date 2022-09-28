@@ -23,14 +23,14 @@ double input(char B[100])
         //Overview view//
         if(stricmp(B,"about")==0)
         {
-            printf("------------------------------------------------\nOverview \n A scientific calculator that can handle the four arithmetic operations and frequently used calculations, various functions, and in addition to statistics\n Creator shimotuke1535(simonomao1535@gmail.com)\n---------- ----------------------------------\nEnter a number/expression=>");
+            printf("------------------------------------------------\n Overview \n  A scientific calculator that can handle the four arithmetic operations and frequently used calculations, various functions, and in addition to statistics\n  Creator shimotuke1535(simonomao1535@gmail.com)\n ---------- ----------------------------------\n Enter a number/expression=>");
             scanf("%s",B);
             scanf("%c",&dust);
         }
         // display help message //
         else if(stricmp(B,"HELP")==0)
         {
-            printf("------------------\nfunction input help\ns=>sine function (sin)\nc=>cosine function (cos)\nt=>tangent function (tan)\n$=>square root (ã)\nl=>logarithmic function (log) \np=>pi\n!=>factorial\n^=>power\nr=>random number\n- -----------------\noperator input help\n+=>addition\n-=>subtraction\n*=>multiplication\n/=>division\n%% =>Remainder calculation\nf=>statistics mode\nc=>clear\nq=>end\n-------------------\ninput method help\nfirst time input/ How to input after initialization\nPlease input in order of (function declaration) (number)\nHow to input in normal mode\nPlease input in order of (operator) (function declaration) (number)\ n------------------\nInput example: sin60+40?\nInput initial value=>s60\nInput formula=> +^40\nInput index => 2\n------------------\nEnter a number/formula=>");
+            printf("------------------\n function input help\n s=>sine function (sin)\n c=>cosine function (cos)\n t=>tangent function (tan)\n $=>square root (ã)\n l=>logarithmic function (log) \n p=>pi\n !=>factorial\n ^=>power\n r=>random number\n - -----------------\n operator input help\n +=>addition\n -=>subtraction\n *=>multiplication\n /=>division\n %% =>Remainder calculation\n f=>statistics mode\n c=>clear\n q=>end\n -------------------\n input method help\n first time input/ How to input after initialization\n Please input in order of (function declaration) (number)\n How to input in normal mode\n Please input in order of (operator) (function declaration) (number)\n ------------------\n Input example: sin60+40?\n Input initial value=>s60\n Input formula=> +^40\n Input index => 2\n ------------------\n Enter a number/formula=>");
             scanf("%s",B);
             scanf("%c",&dust);
         }
@@ -61,15 +61,15 @@ double input(char B[100])
         //exception handling//
         if(a==90)
         {
-            printf("infERROR!\n");
+            printf("infERROR!\n ");
             while(a==90)
             {
-                printf("Re-enter (you don't have to enter t)\n");
+                printf("Re-enter (you don't have to enter t)\n ");
                 scanf("%.3lf",&a);
                 printf("a=>%.3lf");
                 if(a == 90)
                 {
-                    printf("infERROR!\n");
+                    printf("infERROR!\n ");
                 }
             }
         }
@@ -101,8 +101,8 @@ tmp *= i;
         }
         if(tmp >= DBL_MAX)
         {
-            printf("DBL_MAX Hight!!!\n");
-            printf("Set to 0 to avoid errors.\n");
+            printf("DBL_MAX Hight!!!\n ");
+            printf("Set to 0 to avoid errors.\n ");
             tmp = 0;
         }
         a = tmp;
@@ -149,7 +149,7 @@ int sta(void)
             //exception handling//
             if(e<=0||e>=1000)
             {
-                printf("ERROR!!\nPlease try again\n");
+                printf("ERROR!!\n Please try again\n ");
             }
             else
             {
@@ -157,7 +157,7 @@ int sta(void)
             }
         }
         
-        printf("Enter a number (enter an integer)\n");
+        printf("Enter a number (enter an integer)\n ");
         for(i=0;i<=e-1;i++)
         {
             printf("[%d]=>",i+1);
@@ -192,10 +192,10 @@ int sta(void)
                 b = 0;
             }
         }
-        printf("sort!!\n");
+        printf("sort!!\n ");
         for(i=0;i<=e-1;i++)
         {
-            printf("[%d]=>%d\n",i+1,x[i]);
+            printf("[%d]=>%d\n ",i+1,x[i]);
         }
         max = x[e-1];
         min = x[0];
@@ -208,7 +208,7 @@ int sta(void)
         {
             med = x[(e-1)/2];
         }
-        printf("number of elements=>%d\nmax=>%d\nminimum=>%d\naverage=>%d\nmedian=>%d\n",e,max,min ,ave,med);
+        printf("number of elements=>%d\n max=>%d\n minimum=>%d\n average=>%d\n median=>%d\n ",e,max,min ,ave,med);
         check = 1;
         while(1)
         {
@@ -217,11 +217,11 @@ int sta(void)
             scanf("%c",&dust);
             if(sw != 'N' || sw != 'Y')
             {
-                printf("Invalid input\nPlease retype\n");
+                printf("Invalid input\n Please retype\n ");
             }
             if(sw == 'N'||sw == 'n')
             {
-                printf("Switch to calculator mode\n");
+                printf("Switch to calculator mode\n ");
                 check = 0;
                 break;
             }
@@ -249,10 +249,10 @@ int main(void)
     ans = 0;
     system("cls");
     //initial input//
-    printf("Scientific calculator\n");
-    printf("About Page => Enter 'ABOUT'\n");
-    printf("Input help => type 'HELP'\n");
-    printf("------------------\nInput example: sin60+40?\nInput initial value=>s60\nInput formula=>+^40\ nInput index => 2\n------------------\n");
+    printf("Scientific calculator\n ");
+    printf("About Page => Enter 'ABOUT'\n ");
+    printf("Input help => type 'HELP'\n ");
+    printf("------------------\n Input example: sin60+40?\n Input initial value=>s60\n Input formula=>+^40\n Input index => 2\n ------------------\n ");
     printf("Enter the initial value (see HELP for how to enter) =>");
     scanf("%s",A);
     scanf("%c",&dust);
@@ -273,7 +273,7 @@ int main(void)
             b = input(B);
             ans=a+b;
             printf("%d=>",i);
-            printf("(%.3lf)+(%.3lf)=%.3lf\n",a,b,ans);
+            printf("(%.3lf)+(%.3lf)=%.3lf\n ",a,b,ans);
             a = ans;
             break;
 
@@ -284,7 +284,7 @@ int main(void)
             b = input(B);
             ans=a-b;
             printf("%d=>",i);
-            printf("(%.3lf)-(%.3lf)=%.3lf\n",a,b,ans);
+            printf("(%.3lf)-(%.3lf)=%.3lf\n ",a,b,ans);
             a = ans;
             break;
             
@@ -295,7 +295,7 @@ int main(void)
             b = input(B);
             ans=a*b;
             printf("%d=>",i);
-            printf("(%.3lf)~(%.3lf)=%.3lf\n",a,b,ans);
+            printf("(%.3lf)~(%.3lf)=%.3lf\n ",a,b,ans);
             a = ans;
             break;
             
@@ -306,14 +306,14 @@ int main(void)
             b = input(B);
             if(b==0||strcmp(B,"s0")==1||strcmp(B,"c90")==1)
             {
-                printf("infERROR!\nPlease try again=>");
+                printf("infERROR!\n Please try again=>");
                 scanf("%s",B);
                 scanf("%c",&dust);
                 b = input(B);
             }
             ans=a/b;
             printf("%d=>",i);
-            printf("(%.3lf)€(%.3lf)=%.3lf\n",a,b,ans);
+            printf("(%.3lf)€(%.3lf)=%.3lf\n ",a,b,ans);
             a = ans;
             break;
             
@@ -324,20 +324,20 @@ int main(void)
             b = input(B);
             ans = fmod(a,b);
             printf("%d=>", i);
-            printf("(%.3lf)%%(%.3lf)=%.3lf\n",a,b,ans);
+            printf("(%.3lf)%%(%.3lf)=%.3lf\n ",a,b,ans);
             a = ans;
             break;
 
             //statistics mode//
             case 'f':
-            printf("Moving to statistics mode\n");
+            printf("Moving to statistics mode\n ");
             sta();
             printf("Exit calculator? Y/N=>");
             scanf("%c" , &sw);
             scanf("%c",&dust);
             if(sw == 'Y'||sw == 'y')
             {
-                printf("Thank you for your hard work\n");
+                printf("Thank you for your hard work\n ");
                 c = 2;
                 break;
             }
@@ -360,7 +360,7 @@ int main(void)
             i = 0;
             system("cls");
             //initial re-entry//
-            printf("Clear!!\n");
+            printf("Clear!!\n ");
             printf("Enter a number =>");
             scanf("%s",A);
             scanf("%c",&dust);
@@ -374,7 +374,7 @@ int main(void)
 
             //exception handling//
             default:
-            printf("ERROR!!!\n");
+            printf("ERROR!!!\n ");
             i--;
             break;
         }
@@ -387,7 +387,7 @@ int main(void)
             scanf("%c",&dust);
             if(sw == 'Y'||sw == 'y')
             {
-                printf("Thank you for your hard work\n");
+                printf("Thank you for your hard work\n ");
                 break;
             }
             else
@@ -404,7 +404,7 @@ int main(void)
     //display final value//
     if(c == 1)
     {
-        printf("Finish=>%.3lf\n",ans);
+        printf("Finish=>%.3lf\n ",ans);
     }
     return 0;
 }
