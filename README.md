@@ -1,5 +1,5 @@
 # workspace
-##LICENSE
+## LICENSE
 (This license is powered by Google Translate Tools)
 This Workspace contains Mao Shimono's programs.
 The copyright of the program here belongs to me.
