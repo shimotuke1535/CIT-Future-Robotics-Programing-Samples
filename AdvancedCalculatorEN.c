@@ -1,3 +1,4 @@
+//SPDX-FileCopyrightText: 2022 Shimono Mao <simonomao1535@gmail.com>
 //Scientific calculator //
 //read headers//
 #include <stdio.h>

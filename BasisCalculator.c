@@ -1,3 +1,4 @@
+//SPDX-FileCopyrightText: 2022 Shimono Mao <simonomao1535@gmail.com>
 #include<stdio.h>
 #include<math.h>
 #define PI 3.1415
